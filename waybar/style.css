@@ -126,6 +126,7 @@ button:hover {
 
 #clock {
   border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
   padding: 0px 8px 0px 8px;
   background-color: #000000;
@@ -148,7 +149,9 @@ button:hover {
 }
 
 #workspaces {
+  margin-left: 5px;
   border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
   background-color: #000000;
 }
