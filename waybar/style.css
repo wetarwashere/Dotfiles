@@ -18,7 +18,9 @@ button:hover {
 }
 
 #custom-arch {
-  border: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   color: #ffffff;
   transition: all 0.3s ease-out;
   padding: 0px 13px 0px 12px;
@@ -31,7 +33,9 @@ button:hover {
 }
 
 #custom-power {
-  border: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   transition: all 0.3s ease-out;
   background-color: #000000;
   padding: 0px 15px 0px 14px;
@@ -75,7 +79,9 @@ button:hover {
 }
 
 #mpd {
-  border: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   padding: 0px 10px 0px 10px;
   background-color: #000000;
   color: #ffffff;
@@ -88,13 +94,15 @@ button:hover {
 }
 
 #battery {
-  border: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   padding: 0px 11px 0px 11px;
   background-color: #000000;
 }
 
 #wireplumber {
-  border: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   padding: 0px 9px 0px 9px;
   background-color: #000000;
 }
@@ -106,7 +114,8 @@ button:hover {
 }
 
 #tray {
-  border: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   padding: 0px 9px 0px 9px;
   background-color: #000000;
 }
@@ -117,31 +126,36 @@ button:hover {
 }
 
 #clock {
-  border: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   padding: 0px 8px 0px 8px;
   background-color: #000000;
 }
 
 #cava {
-  border: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   padding: 0px 8px 0px 8px;
   background-color: #000000;
 }
 
 #network {
-  border: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   background-color: #000000;
   padding: 0px 12px 0px 12px;
 }
 
 #workspaces {
-  border: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   background-color: #000000;
 }
 
 #workspaces button {
   min-width: 15px;
-  min-height: 20px;
+  min-height: 22px;
   transition: none;
   color: #858585;
   border: none;

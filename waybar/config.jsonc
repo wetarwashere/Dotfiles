@@ -3,7 +3,6 @@
     "position": "top",
     "height": 35,
     "margin": "10, 20, 0, 20",
-    "spacing": 5,
     "modules-left": [
         "custom/arch",
         "cava",
