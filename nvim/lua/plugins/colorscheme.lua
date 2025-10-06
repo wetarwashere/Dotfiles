@@ -19,6 +19,7 @@ return {
 		vim.api.nvim_set_hl(0, "NeoTreeExpander", { fg = "#495162" })
 		vim.api.nvim_set_hl(0, "NeoTreeTitleBar", { bg = "#ffffff", fg = "#000000" })
 		vim.api.nvim_set_hl(0, "NeoTreeTitleBar", { bg = "#ffffff", fg = "#000000" })
+		vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#000000" })
 		vim.api.nvim_set_hl(0, "ScreenkeyTitle", { fg = "#ffffff" })
 		vim.api.nvim_set_hl(0, "CursorLine", { bg = "#080808" })
 		vim.api.nvim_set_hl(0, "Cursor", { bg = "#ffffff" })
