@@ -7,7 +7,6 @@
     "modules-left": [
         "custom/arch",
         "cava",
-        "custom/lyrics",
         "mpd"
     ],
     "modules-right": [
