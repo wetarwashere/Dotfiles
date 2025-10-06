@@ -149,7 +149,7 @@ button:hover {
 
 #workspaces button label {
   transition: all 150ms ease-in-out;
-  transition: all 148ms linear;
+  transition: all 170ms linear;
   font-size: 9px;
 }
 
