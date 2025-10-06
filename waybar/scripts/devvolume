@@ -1,5 +1,0 @@
-#!/bin/sh
-
-volume=$(pactl get-sink-volume alsa_output.pci-0000_03_00.6.analog-stereo | grep -oP '(\d+)%' | head -n 1)
-
-makoctl dismiss -a && notify-send -c volume -i $HOME/.local/share/icons/Sound.png "Volume" "$volume"
