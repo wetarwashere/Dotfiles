@@ -88,7 +88,7 @@ return {
 				icons_enabled = true,
 				theme = "wetar",
 				component_separators = { left = "", right = "" },
-				section_separators = { left = "", right = "" },
+				section_separators = { left = "", right = "" },
 				disabled_filetypes = { "neo-tree", "alpha" },
 				ignore_focus = { "neo-tree", "alpha" },
 				always_divide_middle = true,
