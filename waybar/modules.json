@@ -23,7 +23,7 @@
         "on-click-right": "$HOME/.config/waybar/scripts/wrandom",
     },
     "custom/power": {
-        "format": "󰅱",
+        "format": "",
         "tooltip": false,
     },
     "custom/off": {

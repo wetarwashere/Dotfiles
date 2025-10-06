@@ -21,6 +21,7 @@ button:hover {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
+  font-size: 20px;
   color: #ffffff;
   transition: all 0.3s ease-out;
   padding: 0px 13px 0px 12px;
@@ -37,6 +38,7 @@ button:hover {
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   transition: all 0.3s ease-out;
+  font-size: 20px;
   background-color: #000000;
   padding: 0px 15px 0px 14px;
 }
@@ -44,6 +46,7 @@ button:hover {
 #custom-off {
   border: 2px solid #ffffff;
   transition: all 0.3s ease-out;
+  font-size: 16px;
   background-color: #000000;
   padding: 0px 15px 0px 14px;
 }
@@ -53,6 +56,7 @@ button:hover {
   transition: all 0.3s ease-out;
   background-color: #000000;
   margin-right: 5px;
+  font-size: 16px;
   margin-left: 5px;
   padding: 0px 15px 0px 14px;
 }
