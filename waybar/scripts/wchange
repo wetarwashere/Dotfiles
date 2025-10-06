@@ -1,8 +1,0 @@
-#!/bin/sh
-
-wallpaper_folder=$HOME/Pictures/Wallpapers
-wallpaper=$(for a in $wallpaper_folder/*; do echo -en " ${a##*/}\0icon\x1f$a\n" ; done | rofi -dmenu -i -p "   " -theme-str "@import 'wallpaper.rasi'" | tr -d ' ')
-temp_wallpaper=$HOME/.local/share/Wallpaper.png
-
-cp $wallpaper_folder/$wallpaper $temp_wallpaper
-swww img "$wallpaper_folder/$wallpaper" --transition-fps 60 --transition-type grow --transition-pos center --transition-duration 1.5 && notify-send -c wallpaper -i $HOME/.local/share/icons/Picture.png "Wallpaper" "Wallpaper changed successfully"

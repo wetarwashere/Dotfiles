@@ -19,7 +19,7 @@
     "custom/arch": {
         "format": "",
         "tooltip": false,
-        "on-click": "$HOME/.config/waybar/scripts/wchange",
+        "on-click": "$HOME/.config/waybar/scripts/swifty",
         "on-click-right": "$HOME/.config/waybar/scripts/wrandom",
     },
     "custom/power": {
