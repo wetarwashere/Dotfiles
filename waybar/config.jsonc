@@ -2,7 +2,7 @@
     "layer": "bottom",
     "position": "top",
     "height": 35,
-    "margin": "5, 15, 0, 15",
+    "margin": "4, 5, 0, 5",
     "spacing": 5,
     "modules-left": [
         "custom/arch",
