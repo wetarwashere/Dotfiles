@@ -66,8 +66,7 @@ cp -r $HOME/Dotfiles/.local/share/themes $HOME/.local/share
 
 cp -r $HOME/Dotfiles/.local/state/mpd $HOME/.local/share
 
-cp -r Music $HOME
-cp -r Pictures $HOME
+mkdir -p $HOME/Pictures/Screenshots
 
 echo "Opening neovim...."
 echo " "

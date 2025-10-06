@@ -1,6 +1,8 @@
 # Previews
 ![preview1.png](./Assets/preview1.png)
 ![preview2.png](./Assets/preview2.png)
+![preview3.png](./Assets/preview3.png)
+![preview4.png](./Assets/preview4.png)
 
 # Introducing my rice
 Wetar's rice, yeah that's me. This is just my personal rice, i use this everyday
