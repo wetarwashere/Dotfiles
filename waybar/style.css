@@ -68,6 +68,12 @@ button:hover {
   background-color: #101010;
 }
 
+#custom-lyrics {
+  border: 2px solid #ffffff;
+  background-color: #000000;
+  padding: 0px 10px 0px 10px;
+}
+
 #mpd {
   border: 2px solid #ffffff;
   padding: 0px 10px 0px 10px;

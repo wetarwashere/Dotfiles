@@ -12,6 +12,9 @@
             "custom/off",
         ],
     },
+    "custom/lyrics": {
+        "exec": "sptlrx pipe"
+    },
     "tray": {
         "icon-size": 20,
         "spacing": 10,
