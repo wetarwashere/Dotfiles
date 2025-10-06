@@ -1,0 +1,147 @@
+{
+    "group/power": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 1100,
+            "click-to-reveal": true,
+            "transition-left-to-right": true,
+        },
+        "modules": [
+            "custom/power",
+            "custom/reboot",
+            "custom/off",
+        ],
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10,
+    },
+    "custom/arch": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "$HOME/.config/waybar/scripts/swifty",
+        "on-click-right": "$HOME/.config/waybar/scripts/wrandom",
+    },
+    "custom/power": {
+        "format": "󰅱",
+        "tooltip": false,
+    },
+    "custom/off": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "poweroff",
+    },
+    "custom/reboot": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "reboot",
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 Muted",
+        "on-click": "pactl set-sink-mute alsa_output.pci-0000_03_00.6.analog-stereo toggle && $HOME/.config/waybar/scripts/volumestate",
+        "tooltip": false,
+        "format-icons": ["󰕿", "󰖀", "󰕾"],
+        "on-scroll-up": "pactl set-sink-volume alsa_output.pci-0000_03_00.6.analog-stereo +2% && $HOME/.config/waybar/scripts/devvolume",
+        "on-scroll-down": "pactl set-sink-volume alsa_output.pci-0000_03_00.6.analog-stereo -2% && $HOME/.config/waybar/scripts/devvolume"
+    },
+    "mpd": {
+        "format": "{stateIcon} {title}",
+        "format-paused": "{stateIcon} {title}",
+        "state-icons": {
+            "paused": "",
+            "playing": " ",
+        },
+        "format-stopped": "",
+        "on-click": "mpc toggle && $HOME/.config/waybar/scripts/songinfo",
+        "on-scroll-up": "mpc volume +2 && $HOME/.config/waybar/scripts/songvolume",
+        "on-scroll-down": "mpc volume -2 && $HOME/.config/waybar/scripts/songvolume",
+        "tooltip": false,
+    },
+    "battery": {
+        "interval": 1,
+        "bat": "BAT1",
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-discharging": "󱟨 {capacity}%",
+        "format-icons": [ "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰁹" ],
+        "max-length": 25,
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format":"{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "11": "",
+            "12": "",
+            "13": "",
+            "14": "",
+            "15": "",
+            "16": "",
+            "17": "",
+            "18": "",
+            "19": "",
+            "10": "",
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "*": 2,
+        },
+    },
+    "cava": {
+        "bars": 12,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "bar_delimiter": 0,
+        "method": "pipewire",
+        "input_delay": 0,
+    },
+    "clock": {
+        "format": "󰥔 {:%I:%M %p}",
+        "interval": 60,
+        "timezone": "Asia/Jakarta",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ffffff'><b>{}</b></span>"
+            },
+        },
+    },
+    "network": {
+        "interval": 1,
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
+        "format": "{icon} {signalStrength}%",
+        "format-disconnected": "",
+        "tooltip": false,
+    },
+}
