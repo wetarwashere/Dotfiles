@@ -21,7 +21,7 @@ WIN + CTRL + RIGHT: Next workspace
 WIN + CTRL + LEFT: Previous workspace
 WIN + SHIFT + UP: Increase volume by 2
 WIN + SHIFT + DOWN: Decrease volume by 2
-WIN + SHIFT + W: Wallpaper selector
+WIN + X: Wallpaper selector
 WIN + E: Exit hyprland
 WIN + O: Open discord
 WIN + M: Open file manager
