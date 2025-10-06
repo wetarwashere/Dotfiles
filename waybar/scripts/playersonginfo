@@ -1,0 +1,13 @@
+#!/bin/sh
+
+status=$(playerctl --player=mpd status)
+
+if pgrep -x "rmpc" >/dev/null || pgrep -x "ncmpcpp" >/dev/null; then
+    exit 1
+fi
+
+if [ $status = "Playing" ]; then
+    makoctl dismiss -a && notify-send -c music -i $HOME/.local/share/albums/"$(mpc current --format "%title% - %artist%")".png "Playing" "$(mpc current --format %title%)"
+else
+    makoctl dismiss -a && notify-send -c music-paused -i $HOME/.local/share/icons/Music.png "Paused" "Song paused"
+fi
