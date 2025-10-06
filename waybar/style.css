@@ -1,0 +1,172 @@
+* {
+  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-weight: 900;
+  border-radius: 0px;
+  min-height: 0;
+}
+
+tooltip {
+  border: 2px solid #ffffff;
+}
+
+button:hover {
+  text-shadow: none;
+  box-shadow: none;
+  background: none;
+  transition: none;
+}
+
+#custom-arch {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition: all 0.3s ease-out;
+  padding: 0px 13px 0px 12px;
+  background-color: #000000;
+}
+
+#custom-arch:hover {
+  color: #d0d0d0;
+  background-color: #353535;
+}
+
+#custom-power {
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-out;
+  background-color: #000000;
+  padding: 0px 15px 0px 14px;
+}
+
+#custom-off {
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-out;
+  background-color: #000000;
+  padding: 0px 15px 0px 14px;
+}
+
+#custom-reboot {
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-out;
+  background-color: #000000;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0px 15px 0px 14px;
+}
+
+#custom-reboot:hover {
+  color: #d0d0d0;
+  background-color: #101010;
+}
+
+#custom-off:hover {
+  color: #d0d0d0;
+  background-color: #101010;
+}
+
+#custom-power:hover {
+  color: #d0d0d0;
+  background-color: #101010;
+}
+
+#mpd {
+  border: 2px solid #ffffff;
+  padding: 0px 10px 0px 10px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#mpd:hover {
+  color: #d0d0d0;
+  transition: all 0.3s ease-out;
+  background-color: #101010;
+}
+
+#battery {
+  border: 2px solid #ffffff;
+  padding: 0px 11px 0px 11px;
+  background-color: #000000;
+}
+
+#wireplumber {
+  border: 2px solid #ffffff;
+  padding: 0px 9px 0px 9px;
+  background-color: #000000;
+}
+
+#wireplumber:hover {
+  color: #d0d0d0;
+  transition: all 0.3s ease-out;
+  background-color: #101010;
+}
+
+#tray {
+  border: 2px solid #ffffff;
+  padding: 0px 9px 0px 9px;
+  background-color: #000000;
+}
+
+#tray menu {
+  border: 2px solid #ffffff;
+  background-color: #000000;
+}
+
+#clock {
+  border: 2px solid #ffffff;
+  padding: 0px 8px 0px 8px;
+  background-color: #000000;
+}
+
+#cava {
+  border: 2px solid #ffffff;
+  padding: 0px 8px 0px 8px;
+  background-color: #000000;
+}
+
+#network {
+  border: 2px solid #ffffff;
+  background-color: #000000;
+  padding: 0px 12px 0px 12px;
+}
+
+#workspaces {
+  border: 2px solid #ffffff;
+  background-color: #000000;
+}
+
+#workspaces button {
+  min-width: 15px;
+  min-height: 20px;
+  transition: none;
+  color: #858585;
+  border: none;
+}
+
+#workspaces button label {
+  transition: all 150ms ease-in-out;
+  transition: all 148ms linear;
+  font-size: 11px;
+}
+
+#workspaces button.active label {
+  font-size: 14px;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+}
+
+#workspaces button.active:hover {
+  color: #c0c0c0;
+}
+
+#workspaces button:hover {
+  color: #a0a0a0;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+#workspaces button:hover {
+  border-color: transparent;
+}

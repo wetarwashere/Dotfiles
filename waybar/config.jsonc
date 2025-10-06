@@ -1,0 +1,24 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 35,
+    "margin": "5, 15, 0, 15",
+    "spacing": 5,
+    "modules-left": [
+        "custom/arch",
+        "cava",
+        "mpd"
+    ],
+    "modules-right": [
+        "network",
+        "wireplumber",
+        "battery",
+        "clock",
+        "tray",
+        "hyprland/workspaces",
+        "group/power"
+    ],
+    "include": [
+        "$HOME/.config/waybar/modules.json"
+    ],
+}
