@@ -34,5 +34,5 @@ current_item_inactive_column_prefix = "$(cyan)$r"
 now_playing_prefix = "P "
 selected_item_prefix = "S "
 
-execute_on_song_change = "~/.local/share/bin/playersonginfo"
+execute_on_song_change = "~/.config/hypr/scripts/playersonginfo"
 message_delay_time = "0"

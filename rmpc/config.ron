@@ -10,7 +10,7 @@
     max_fps: 60,
     wrap_navigation: false,
     enable_mouse: true,
-    on_song_change: [ "~/.local/share/bin/playersonginfo" ],
+    on_song_change: [ "~/.config/hypr/scripts/playersonginfo" ],
     status_update_interval_ms: 800,
     select_current_song_on_change: false,
     cava: (
