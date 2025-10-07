@@ -23,7 +23,7 @@
         "on-click-right": "$HOME/.config/waybar/scripts/wrandom",
     },
     "custom/power": {
-        "format": "",
+        "format": "󱄅",
         "tooltip": false,
     },
     "custom/off": {
@@ -59,7 +59,7 @@
         "tooltip": false,
     },
     "battery": {
-        "interval": 1,
+        "interval": 10,
         "bat": "BAT1",
         "states": {
             "warning": 30,
@@ -132,7 +132,7 @@
         },
     },
     "network": {
-        "interval": 1,
+        "interval": 10,
         "format-icons": [
             "󰤯",
             "󰤟",
