@@ -54,7 +54,7 @@ element-text {
 
 element-icon {
     size: 35;
-    margin: 0 0px 0 8px;
+    margin: 0 6px 0 8px;
     background-color: transparent;
 }
 
@@ -67,18 +67,18 @@ inputbar {
 
 listview {
     background-color: @bg;
-    column: 2;
+    column: 1;
     lines: 7;
 }
 
 entry {
-    padding: 6px;
+    padding: 6px 8px 6px 8px;
     enabled: true;
     text-color: #ffffff;
 }
 
 prompt {
-    padding: 6px;
+    padding: 6px 8px 6px 8px;
     enabled: true;
     background-color: #ffffff;
     text-color: #000000;
