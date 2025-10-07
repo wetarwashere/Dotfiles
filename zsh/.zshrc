@@ -143,7 +143,7 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Making some aliases
 alias gpo="git push -u origin main"
-alias ga="git add ."
+alias ga="git add -A"
 alias gp="git pull"
 alias gr="git restore"
 alias gc="git commit -am "
