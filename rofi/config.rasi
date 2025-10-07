@@ -24,10 +24,16 @@ configuration {
     spacing: 0;
 }
 
-mainbox {
+window {
     width: 40%;
     border: 2px solid;
     border-color: #ffffff;
+    children: [mainbox];
+}
+
+mainbox {
+   background-color: #000000;
+   children: [listview, inputbar];
 }
 
 element {
@@ -53,25 +59,26 @@ element-icon {
 }
 
 inputbar {
-    background-color: #ffffff;
     enabled: true;
+    spacing: 8;
     padding: 8px;
     children: [prompt, entry];
 }
 
 listview {
     background-color: @bg;
-    column: 1;
+    column: 2;
     lines: 7;
 }
 
 entry {
-    background-color: #ffffff;
+    padding: 6px;
     enabled: true;
-    text-color: #000000;
+    text-color: #ffffff;
 }
 
 prompt {
+    padding: 6px;
     enabled: true;
     background-color: #ffffff;
     text-color: #000000;
@@ -81,6 +88,4 @@ textbox {
     background-color: #000000;
     text-color: #ffffff;
     padding: 10px;
-    border: 2px solid;
-    border-color: #ffffff;
 }
