@@ -24,7 +24,7 @@ configuration {
     spacing: 0;
 }
 
-window {
+mainbox {
     width: 40%;
     border: 2px solid;
     border-color: #ffffff;
@@ -53,6 +53,7 @@ element-icon {
 }
 
 inputbar {
+    background-color: #ffffff;
     enabled: true;
     padding: 8px;
     children: [prompt, entry];
@@ -65,11 +66,21 @@ listview {
 }
 
 entry {
+    background-color: #ffffff;
     enabled: true;
-    text-color: @fg;
+    text-color: #000000;
 }
 
 prompt {
     enabled: true;
-    text-color: @fg;
+    background-color: #ffffff;
+    text-color: #000000;
+}
+
+textbox {
+    background-color: #000000;
+    text-color: #ffffff;
+    padding: 10px;
+    border: 2px solid;
+    border-color: #ffffff;
 }
