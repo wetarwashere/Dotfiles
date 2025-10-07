@@ -30,7 +30,6 @@ button:hover {
 
 #custom-arch:hover {
   color: #d0d0d0;
-  background-color: #353535;
 }
 
 #custom-power {
@@ -65,18 +64,15 @@ button:hover {
 }
 
 #custom-reboot:hover {
-  color: #d0d0d0;
-  background-color: #101010;
+  color: #c0c0c0;
 }
 
 #custom-off:hover {
-  color: #d0d0d0;
-  background-color: #101010;
+  color: #c0c0c0;
 }
 
 #custom-power:hover {
-  color: #d0d0d0;
-  background-color: #101010;
+  color: #c0c0c0;
 }
 
 #custom-lyrics {
@@ -94,9 +90,8 @@ button:hover {
 }
 
 #mpd:hover {
-  color: #d0d0d0;
+  color: #c0c0c0;
   transition: all 0.3s ease-out;
-  background-color: #101010;
 }
 
 #battery {
@@ -114,9 +109,8 @@ button:hover {
 }
 
 #wireplumber:hover {
-  color: #d0d0d0;
+  color: #c0c0c0;
   transition: all 0.3s ease-out;
-  background-color: #101010;
 }
 
 #tray {
