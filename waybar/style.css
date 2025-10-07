@@ -171,11 +171,11 @@ button:hover {
 #workspaces button label {
   transition: all 150ms ease-in-out;
   transition: all 188ms linear;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 #workspaces button.active label {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #workspaces button.active {
