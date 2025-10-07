@@ -106,7 +106,7 @@
         },
     },
     "cava": {
-        "bars": 14,
+        "bars": 12,
         "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
         "bar_delimiter": 0,
         "method": "pipewire",
