@@ -2,7 +2,7 @@
     "group/power": {
         "orientation": "inherit",
         "drawer": {
-            "transition-duration": 900,
+            "transition-duration": 800,
             "click-to-reveal": true,
             "transition-left-to-right": true,
         },
