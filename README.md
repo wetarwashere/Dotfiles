@@ -24,6 +24,7 @@ WIN + SHIFT + DOWN: Decrease volume by 2
 WIN + SHIFT + W: Open wallpaper picker
 WIN + E: Exit hyprland
 WIN + O: Open discord
+WIN + SHIFT + O: Open obs
 WIN + M: Open file manager
 WIN + B: Open firefox
 WIN + D: Open app selector
