@@ -52,7 +52,6 @@ cp -r $HOME/Dotfiles/rofi $HOME/.config
 cp -r $HOME/Dotfiles/waybar $HOME/.config
 cp -r $HOME/Dotfiles/zsh $HOME/.config
 cp -r $HOME/Dotfiles/mpv $HOME/.config
-cp -r $HOME/Dotfiles/sptlrx $HOME/.config
 
 mkdir $HOME/.local
 mkdir $HOME/.local/share
