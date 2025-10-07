@@ -65,7 +65,7 @@
         {
             "type": "colors",
             "paddingLeft": 20,
-            "symbol": "circle"
+            "symbol": "square"
         }
  
     ]
