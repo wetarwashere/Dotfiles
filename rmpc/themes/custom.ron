@@ -137,7 +137,7 @@
                     panes: [
                         (
                             size: "100%",
-                            borders: "ALL",
+                            borders: "NONE",
                             pane: Pane(TabContent),
                         ),
                     ]
