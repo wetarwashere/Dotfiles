@@ -79,7 +79,7 @@ entry {
 }
 
 prompt {
-    padding: 6px 8px 6px 8px;
+    padding: 8px 8px 6px 8px;
     enabled: true;
     background-color: #ffffff;
     text-color: #000000;
