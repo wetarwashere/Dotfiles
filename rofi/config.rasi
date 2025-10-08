@@ -60,7 +60,6 @@ element-icon {
 
 inputbar {
     enabled: true;
-    spacing: 8;
     padding: 8px;
     children: [prompt, entry];
 }
@@ -68,13 +67,14 @@ inputbar {
 listview {
     background-color: @bg;
     column: 1;
-    lines: 7;
+    lines: 8;
 }
 
 entry {
-    padding: 6px 8px 6px 8px;
-    background-color: #101010;
+    padding: 6px 12px 6px 12px;
     enabled: true;
+    border: 2px solid;
+    border-color: #ffffff;
     text-color: #ffffff;
 }
 
