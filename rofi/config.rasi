@@ -60,7 +60,7 @@ element-icon {
 
 inputbar {
     enabled: true;
-    padding: 8px;
+    padding: 5px;
     children: [prompt, entry];
 }
 
