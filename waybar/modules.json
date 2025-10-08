@@ -92,7 +92,7 @@
     },
     "clock": {
         "format": "󰥔 {:%I:%M %p}",
-        "format-alt": "󰥔 {:%A %d %B %Y}",
+        "format-alt": "󰥔 {:%b %d %a %Y}",
         "interval": 60,
         "timezone": "Asia/Jakarta",
         "tooltip-format": "<tt>{calendar}</tt>",
@@ -120,7 +120,7 @@
             "󰤨"
         ],
         "format": "{icon} {signalStrength}%",
-        "format-disconnected": "",
+        "format-disconnected": "󰤮 Unknown",
         "tooltip": false,
     },
 }

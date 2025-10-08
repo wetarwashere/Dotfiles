@@ -28,15 +28,10 @@ button:hover {
   background-color: #000000;
 }
 
-#custom-arch:hover {
-  color: #d0d0d0;
-}
-
 #custom-power {
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
-  transition: all 0.3s ease-out;
   font-size: 25px;
   background-color: #000000;
   padding: 0px 15px 0px 14px;
@@ -46,7 +41,6 @@ button:hover {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
-  transition: all 0.3s ease-out;
   background-color: #000000;
   font-size: 16px;
   margin-left: 5px;
@@ -57,22 +51,9 @@ button:hover {
   border-right: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
-  transition: all 0.3s ease-out;
   font-size: 16px;
   background-color: #000000;
   padding: 0px 15px 0px 14px;
-}
-
-#custom-reboot:hover {
-  color: #c0c0c0;
-}
-
-#custom-off:hover {
-  color: #c0c0c0;
-}
-
-#custom-power:hover {
-  color: #c0c0c0;
 }
 
 #custom-lyrics {
@@ -89,11 +70,6 @@ button:hover {
   color: #ffffff;
 }
 
-#mpd:hover {
-  color: #c0c0c0;
-  transition: all 0.3s ease-out;
-}
-
 #battery {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
@@ -104,14 +80,8 @@ button:hover {
 #wireplumber {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
   padding: 0px 9px 0px 9px;
   background-color: #000000;
-}
-
-#wireplumber:hover {
-  color: #c0c0c0;
-  transition: all 0.3s ease-out;
 }
 
 #tray {
@@ -144,8 +114,9 @@ button:hover {
 }
 
 #network {
-  border: 2px solid #ffffff;
-  margin-right: 5px;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
   background-color: #000000;
   padding: 0px 12px 0px 12px;
 }
@@ -193,4 +164,15 @@ window#waybar {
 
 #workspaces button:hover {
   border-color: transparent;
+}
+
+#custom-reboot:hover,
+#custom-off:hover,
+#custom-power:hover,
+#mpd:hover,
+#clock:hover,
+#custom-arch:hover,
+#wireplumber:hover {
+  color: #c0c0c0;
+  transition: all 0.3s ease-out;
 }
