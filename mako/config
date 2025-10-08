@@ -45,11 +45,3 @@ default-timeout=900
 [category=wallpaper]
 width=450
 default-timeout=1200
-
-[category=touchpad]
-width=210
-default-timeout=800
-
-[urgency=low]
-group-by=app-name
-ignore-timeout=true
