@@ -84,8 +84,10 @@
         },
     },
     "cava": {
-        "bars": 12,
-        "format-icons": [ "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "bars": 14,
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "waves": true,
+        "monstercat": true,
         "bar_delimiter": 0,
         "method": "pipewire",
         "input_delay": 0,
