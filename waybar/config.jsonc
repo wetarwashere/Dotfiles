@@ -15,7 +15,7 @@
         "clock",
         "tray",
         "hyprland/workspaces",
-        "group/power"
+        "group/power",
     ],
     "include": [
         "$HOME/.config/waybar/modules.json"

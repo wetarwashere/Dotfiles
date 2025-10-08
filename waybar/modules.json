@@ -92,6 +92,7 @@
     },
     "clock": {
         "format": "󰥔 {:%I:%M %p}",
+        "format-alt": "󰥔 {:%A %d %B %Y}",
         "interval": 60,
         "timezone": "Asia/Jakarta",
         "tooltip-format": "<tt>{calendar}</tt>",

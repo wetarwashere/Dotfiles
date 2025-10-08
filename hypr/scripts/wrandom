@@ -2,7 +2,7 @@
 
 wallpaper_dir="$HOME/Pictures/Wallpapers"
 random_wallpaper=$(find "$wallpaper_dir" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.jpeg" \) | shuf -n 1)
-temp_wallpaper=$HOME/.cache/Wallpaper.png
+temp_wallpaper=$HOME/.cache/Cached.png
 
 cp $random_wallpaper $temp_wallpaper
 swww img "$random_wallpaper" --transition-fps 60 --transition-type outer --transition-pos center --transition-duration 1

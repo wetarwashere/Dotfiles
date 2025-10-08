@@ -104,6 +104,7 @@ button:hover {
 #wireplumber {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
   padding: 0px 9px 0px 9px;
   background-color: #000000;
 }
@@ -143,9 +144,8 @@ button:hover {
 }
 
 #network {
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  border-top: 2px solid #ffffff;
+  border: 2px solid #ffffff;
+  margin-right: 5px;
   background-color: #000000;
   padding: 0px 12px 0px 12px;
 }
