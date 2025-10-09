@@ -64,7 +64,7 @@ return {
 				menu = {
 					border = "single",
 					scrollbar = false,
-					winblend = 1,
+					winblend = 0,
 					draw = {
 						treesitter = { "lsp" },
 					},
@@ -73,7 +73,7 @@ return {
 					window = {
 						border = "single",
 						scrollbar = false,
-						winblend = 1,
+						winblend = 0,
 					},
 					auto_show = true,
 				},
@@ -134,7 +134,7 @@ return {
 				window = {
 					border = "single",
 					scrollbar = false,
-					winblend = 1,
+					winblend = 0,
 				},
 			},
 			fuzzy = { implementation = "prefer_rust_with_warning" },
