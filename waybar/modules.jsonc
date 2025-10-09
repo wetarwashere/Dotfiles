@@ -23,7 +23,6 @@
             "clock",
             "battery",
             "network",
-            "tray",
         ],
     },
     "group/hidempd": {

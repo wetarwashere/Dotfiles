@@ -4,7 +4,7 @@
     "position": "top",
     "reload_style_on_change": true,
     "bar_delimiter": "|",
-    "height": 35,
+    "height": 42,
     "margin": "12, 18, 0, 18",
     "modules-left": [
         "custom/arch",
@@ -14,6 +14,7 @@
         "wireplumber",
         "group/hideessentials",
         "hyprland/workspaces",
+        "tray",
         "group/power",
     ],
 },
