@@ -16,7 +16,7 @@
         "orientation": "horizontal",
         "drawer": {
             "transition-duration": 1200,
-            "click-to-reveal": true,
+            "click-to-reveal": false,
             "transition-left-to-right": false,
         },
         "modules": [
@@ -123,7 +123,7 @@
         "higher_cutoff_freq": 10000,
     },
     "clock": {
-        "format": "󰥔 {:%b %d %a %Y at %I:%M %p}",
+        "format": "󰥔 {:%A at %I:%M %p}",
         "interval": 60,
         "timezone": "Asia/Jakarta",
         "tooltip": false,
