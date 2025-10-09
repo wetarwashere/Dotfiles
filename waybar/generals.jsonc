@@ -11,7 +11,7 @@
         "group/hidempd",
     ],
     "modules-right": [
-        "wireplumber",
+        "hyprland/language",
         "group/hideessentials",
         "hyprland/workspaces",
         "tray",

@@ -12,6 +12,10 @@
             "custom/off",
         ],
     },
+    "hyprland/language": {
+        "format": "󰌌 {}",
+        "tooltip": false,
+    },
     "group/hideessentials": {
         "orientation": "horizontal",
         "drawer": {
@@ -23,6 +27,7 @@
             "clock",
             "battery",
             "network",
+            "wireplumber",
         ],
     },
     "group/hidempd": {
@@ -122,7 +127,7 @@
         "higher_cutoff_freq": 10000,
     },
     "clock": {
-        "format": "󰥔 {:%A at %I:%M %p}",
+        "format": "󰥔 {:%I:%M %p}",
         "interval": 60,
         "timezone": "Asia/Jakarta",
         "tooltip": false,
