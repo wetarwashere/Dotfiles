@@ -1,4 +1,5 @@
 {
+    "name": "webar",
     "layer": "bottom",
     "position": "top",
     "bar_delimiter": "|",
