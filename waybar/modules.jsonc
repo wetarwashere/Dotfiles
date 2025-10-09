@@ -12,12 +12,6 @@
             "custom/off",
         ],
     },
-    "custom/servcheck": {
-        "exec": "$HOME/.config/waybar/scripts/servcheck",
-        "interval": 10,
-        "format": "{}",
-        "tooltip": false,
-    },
     "hyprland/language": {
         "format": "󰌌 {}",
         "tooltip": false,
