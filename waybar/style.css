@@ -94,11 +94,21 @@ button:hover {
   background-color: #000000;
 }
 
+#tray > .active:hover {
+  transition: all 0.2s ease-out;
+  opacity: 0.83;
+}
+
 #tray menu {
   border: 2px solid #ffffff;
   background-color: #000000;
   color: #ffffff;
   padding: 8px;
+}
+
+#tray menu menuitem:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 #clock {

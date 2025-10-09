@@ -1,6 +1,6 @@
 {
     "group/power": {
-        "orientation": "inherit",
+        "orientation": "horizontal",
         "drawer": {
             "transition-duration": 800,
             "click-to-reveal": true,
@@ -13,7 +13,7 @@
         ],
     },
     "tray": {
-        "icon-size": 20,
+        "icon-size": 23,
         "spacing": 10,
     },
     "custom/arch": {
@@ -84,7 +84,7 @@
         },
     },
     "cava": {
-        "bars": 8,
+        "bars": 9,
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
         "waves": true,
         "monstercat": true,
