@@ -1,3 +1,0 @@
-#!/bin/sh
-
-makoctl dismiss -a && notify-send -c brightness "Device Brightness" "Current: $(brightnessctl | grep -oP '\d+(?=%)')%"
