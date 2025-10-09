@@ -25,7 +25,7 @@ configuration {
 }
 
 window {
-    width: 40%;
+    width: 45%;
     border: 2px solid;
     border-color: #ffffff;
     children: [mainbox];
@@ -67,7 +67,7 @@ inputbar {
 listview {
     background-color: @bg;
     column: 1;
-    lines: 8;
+    lines: 9;
 }
 
 entry {
