@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if pgrep -x waybar >/dev/null; then
-    pkill waybar && hyprctl dispatch exec waybar && makoctl reload && notify-send -c waybar "Waybar" "Waybar successfully reloaded"
+    pkill waybar && hyprctl dispatch exec waybar && makoctl reload && notify-send -c waybar "Waybar Reload" "Waybar successfully reloaded"
 else
     hyprctl dispatch exec waybar && notify-send -c waybar "Waybar Status" "Waybar successfully started"
 fi
