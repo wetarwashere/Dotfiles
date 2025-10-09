@@ -96,7 +96,12 @@ button:hover {
 
 #tray > .active:hover {
   transition: all 0.2s ease-out;
-  opacity: 0.82;
+  opacity: 0.84;
+}
+
+#tray > .passive:hover {
+  transition: all 0.2s ease-out;
+  opacity: 0.84;
 }
 
 #tray menu {

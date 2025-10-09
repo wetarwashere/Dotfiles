@@ -12,6 +12,18 @@
             "custom/off",
         ],
     },
+    "group/tray": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 800,
+            "click-to-reveal": true,
+            "transition-left-to-right": true,
+        },
+        "modules": [
+            "clock",
+            "tray",
+        ],
+    },
     "tray": {
         "icon-size": 23,
         "spacing": 10,
