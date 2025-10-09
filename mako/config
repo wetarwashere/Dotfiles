@@ -45,3 +45,7 @@ default-timeout=900
 [category=wallpaper]
 width=450
 default-timeout=1200
+
+[category=waybar]
+width=408
+default-timeout=900
