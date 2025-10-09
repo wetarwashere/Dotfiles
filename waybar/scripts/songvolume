@@ -2,4 +2,4 @@
 
 volume=$(mpc volume | grep -o '[0-9]\+')
 
-makoctl dismiss -a && notify-send -c music-volume -i $HOME/.local/share/icons/Sound.png "Music" "$volume%"
+makoctl dismiss -a && notify-send -c music-volume "Music Volume" "Current: $volume%"
