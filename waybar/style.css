@@ -18,6 +18,14 @@ button:hover {
   transition: none;
 }
 
+#custom-separator {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 17px;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+}
+
 #custom-arch {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
@@ -144,7 +152,7 @@ button:hover {
   border-bottom: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
   color: #ffffff;
-  padding: 0px 8px 0px 8px;
+  padding: 0px 8px 0px 10px;
   background-color: #000000;
 }
 

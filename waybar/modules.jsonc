@@ -13,6 +13,11 @@
             "custom/off",
         ],
     },
+    "custom/separator": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
+    },
     "hyprland/language": {
         "format": "󰌌 {}",
         "tooltip": false,
