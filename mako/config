@@ -35,7 +35,7 @@ width=280
 default-timeout=900
 
 [category=brightness]
-width=230
+width=204
 default-timeout=900
 
 [category=music-volume]
