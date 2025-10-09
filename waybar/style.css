@@ -105,9 +105,9 @@ button:hover {
 }
 
 #tray {
-  border-bottom: 2px solid #ffffff;
-  border-top: 2px solid #ffffff;
-  padding: 0px 8px 0px 8px;
+  border: 2px solid #ffffff;
+  padding: 0px 12px 0px 12px;
+  margin-right: 5px;
   color: #ffffff;
   background-color: #000000;
 }
@@ -117,6 +117,11 @@ button:hover {
   background-color: #000000;
   color: #ffffff;
   padding: 8px;
+}
+
+#tray > .active:hover {
+  opacity: 0.82;
+  transition: all 0.23s ease-in-out;
 }
 
 #tray menu menuitem:hover {

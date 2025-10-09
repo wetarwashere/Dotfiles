@@ -13,8 +13,8 @@
     "modules-right": [
         "hyprland/language",
         "group/hideessentials",
-        "hyprland/workspaces",
         "tray",
+        "hyprland/workspaces",
         "group/power",
     ],
 },
