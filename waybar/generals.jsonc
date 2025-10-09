@@ -5,7 +5,7 @@
     "reload_style_on_change": true,
     "bar_delimiter": "|",
     "height": 42,
-    "margin": "12, 18, 0, 18",
+    "margin": "12, 10, 0, 10",
     "modules-left": [
         "custom/arch",
         "group/hidempd",
