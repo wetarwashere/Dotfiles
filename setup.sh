@@ -11,7 +11,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-paru -S zsh hyprland discord rofi waybar-cava mako libnotify imagemagick zoxide eza ttf-jetbrains-mono rmpc ncmpcpp mpd cava pipe.sh tty-clock composer go rust neovim python paccache cups kitty mpv localsend-bin playerctl mpd-mpris mpc zsh-syntax-highlighting zsh-completions zsh-auto-venv-git zsh-autosuggestions atuin fzf rg jg poppler ffmpeg 7-zip wl-clipboard resvg libwebp libwebp-utils pipewire pipewire-pulse wireplumber jre-openjdk-headless noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji typy ufw iptables-nft man-db man-pages zip nwg-look brightnessctl sptlrx-bin qt5-wayland qt6-wayland qt5-tools qt6-tools ueberzugpp
+paru -S zsh hyprland discord rofi waybar-cava mako libnotify imagemagick zoxide eza ttf-jetbrains-mono rmpc ncmpcpp mpd cava pipe.sh tty-clock composer go rust neovim python paccache cups kitty mpv playerctl mpd-mpris mpc zsh-syntax-highlighting zsh-completions zsh-auto-venv-git zsh-autosuggestions atuin fzf rg jg poppler ffmpeg 7-zip wl-clipboard resvg libwebp libwebp-utils pipewire pipewire-pulse wireplumber jre-openjdk-headless noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji typy ufw iptables-nft man-db man-pages zip nwg-look brightnessctl sptlrx-bin qt5-wayland qt6-wayland qt5-tools qt6-tools ueberzugpp
 
 echo "Enabling some services...."
 echo " "
