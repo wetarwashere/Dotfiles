@@ -23,7 +23,7 @@ width=210
 default-timeout=900
 
 [category=volume-state]
-width=240
+width=260
 default-timeout=900
 
 [category=music-paused]
@@ -47,5 +47,6 @@ width=450
 default-timeout=1200
 
 [category=waybar]
-width=408
+width=314
 default-timeout=900
+max-icon-size=40
