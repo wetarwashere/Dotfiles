@@ -39,9 +39,8 @@
         ],
     },
     "tray": {
-        "icon-size": 23,
+        "icon-size": 19,
         "spacing": 10,
-        "tooltip-format": "",
     },
     "custom/arch": {
         "format": "",
