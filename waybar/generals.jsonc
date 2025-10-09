@@ -1,0 +1,21 @@
+{
+    "name": "webar",
+    "layer": "bottom",
+    "position": "top",
+    "reload_style_on_change": true,
+    "height": 42,
+    "margin": "12, 10, 0, 10",
+    "modules-left": [
+        "custom/arch",
+        "custom/separator",
+        "group/hidempd",
+    ],
+    "modules-right": [
+        "wireplumber",
+        "group/hideessentials",
+        "tray",
+        "hyprland/workspaces",
+        "custom/separator",
+        "group/power",
+    ],
+},

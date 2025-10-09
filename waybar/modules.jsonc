@@ -1,0 +1,173 @@
+{
+    "group/power": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 1350,
+            "click-to-reveal": false,
+            "transition-left-to-right": true,
+        },
+        "modules": [
+            "custom/power",
+            "custom/exit",
+            "custom/reboot",
+            "custom/off",
+        ],
+    },
+    "custom/separator": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
+    },
+    "group/hideessentials": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 1200,
+            "click-to-reveal": false,
+            "transition-left-to-right": false,
+        },
+        "modules": [
+            "clock",
+            "battery",
+            "network",
+            "backlight",
+        ],
+    },
+    "group/hidempd": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 1000,
+            "click-to-reveal": false,
+            "transition-left-to-right": false,
+        },
+        "modules": [
+            "cava",
+            "mpd",
+        ],
+    },
+    "tray": {
+        "icon-size": 19,
+        "spacing": 10,
+    },
+    "custom/arch": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "$HOME/.config/waybar/scripts/swifty",
+        "on-click-right": "$HOME/.config/waybar/scripts/wrandom",
+    },
+    "backlight": {
+        "device": "amd_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "󰃚",
+            "󰃛",
+            "󰃜",
+            "󰃝",
+            "󰃞",
+            "󰃟",
+            "󰃠",
+        ],
+        "tooltip": false,
+        "on-scroll-up": "brightnessctl set 2%+ && $HOME/.config/waybar/scripts/binfo",
+        "on-scroll-down": "brightnessctl set 2%- && $HOME/.config/waybar/scripts/binfo",
+    },
+    "custom/power": {
+        "format": "󱄅",
+        "tooltip": false,
+    },
+    "custom/off": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "poweroff",
+    },
+    "custom/exit": {
+        "format": "󰈆",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit",
+    },
+    "custom/reboot": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "reboot",
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 Muted",
+        "on-click": "pactl set-sink-mute alsa_output.pci-0000_03_00.6.analog-stereo toggle && $HOME/.config/waybar/scripts/devvolumestate",
+        "tooltip": false,
+        "format-icons": ["󰕿", "󰖀", "󰕾"],
+        "on-scroll-up": "pactl set-sink-volume alsa_output.pci-0000_03_00.6.analog-stereo +2% && $HOME/.config/waybar/scripts/devvolume",
+        "on-scroll-down": "pactl set-sink-volume alsa_output.pci-0000_03_00.6.analog-stereo -2% && $HOME/.config/waybar/scripts/devvolume"
+    },
+    "mpd": {
+        "format": "{stateIcon} {title} - {artist}",
+        "format-paused": "{stateIcon} {title} - {artist}",
+        "state-icons": {
+            "paused": "",
+            "playing": " ",
+        },
+        "format-stopped": "",
+        "on-click": "mpc toggle && $HOME/.config/waybar/scripts/songinfo",
+        "on-scroll-up": "mpc volume +2 && $HOME/.config/waybar/scripts/songvolume",
+        "on-scroll-down": "mpc volume -2 && $HOME/.config/waybar/scripts/songvolume",
+        "tooltip": false,
+    },
+    "battery": {
+        "interval": 10,
+        "bat": "BAT1",
+        "states": {
+            "warning": 30,
+            "critical": 15,
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-discharging": "󱟨 {capacity}%",
+        "format-icons": [ "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰁹" ],
+        "max-length": 25,
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format":"{icon}",
+        "format-icons": {
+            "default": "󰝤",
+        },
+        "persistent-workspaces": {
+            "*": 4,
+        },
+    },
+    "cava": {
+        "bars": 8,
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "waves": true,
+        "monstercat": true,
+        "cava_config": "$HOME/.config/cava",
+        "bar_delimiter": 32,
+        "on-scroll-up": "",
+        "on-scroll-down": "",
+        "method": "pipewire",
+        "input_delay": 0,
+        "lower_cutoff_freq": 80,
+        "higher_cutoff_freq": 10000,
+    },
+    "clock": {
+        "format": "󰥔 {:%I:%M %p}",
+        "format-alt": "󰥔 {:%b %d %a %Y}",
+        "interval": 60,
+        "timezone": "Asia/Jakarta",
+        "tooltip": false,
+    },
+    "network": {
+        "interval": 10,
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
+        "format": "{icon} {signalStrength}%",
+        "format-disconnected": "󰤮 Unknown",
+        "tooltip": false,
+    },
+},
