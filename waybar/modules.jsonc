@@ -2,8 +2,8 @@
     "group/power": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 900,
-            "click-to-reveal": true,
+            "transition-duration": 1240,
+            "click-to-reveal": false,
             "transition-left-to-right": true,
         },
         "modules": [
