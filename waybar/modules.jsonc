@@ -34,6 +34,7 @@
             "battery",
             "network",
             "wireplumber",
+            "backlight",
         ],
     },
     "group/hidempd": {
@@ -57,6 +58,22 @@
         "tooltip": false,
         "on-click": "$HOME/.config/waybar/scripts/swifty",
         "on-click-right": "$HOME/.config/waybar/scripts/wrandom",
+    },
+    "backlight": {
+        "device": "amd_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "󰃚",
+            "󰃛",
+            "󰃜",
+            "󰃝",
+            "󰃞",
+            "󰃟",
+            "󰃠",
+        ],
+        "tooltip": false,
+        "on-scroll-up": "brightnessctl set 2%+ && $HOME/.config/waybar/scripts/binfo",
+        "on-scroll-down": "brightnessctl set 2%- && $HOME/.config/waybar/scripts/binfo",
     },
     "custom/power": {
         "format": "󱄅",

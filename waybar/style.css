@@ -164,6 +164,14 @@ button:hover {
   padding: 0px 8px 0px 8px;
 }
 
+#backlight {
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0px 13px 0px 8px;
+}
+
 #workspaces {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
