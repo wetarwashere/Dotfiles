@@ -12,6 +12,12 @@
             "custom/off",
         ],
     },
+    "custom/servcheck": {
+        "exec": "$HOME/.config/waybar/scripts/servcheck",
+        "interval": 10,
+        "format": "{}",
+        "tooltip": false,
+    },
     "hyprland/language": {
         "format": "󰌌 {}",
         "tooltip": false,
@@ -93,7 +99,7 @@
         "bat": "BAT1",
         "states": {
             "warning": 30,
-            "critical": 15
+            "critical": 15,
         },
         "format": "{icon} {capacity}%",
         "format-charging": "󰂄 {capacity}%",
@@ -118,6 +124,7 @@
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
         "waves": true,
         "monstercat": true,
+        "cava_config": "$HOME/.config/cava",
         "bar_delimiter": 32,
         "on-scroll-up": "",
         "on-scroll-down": "",
