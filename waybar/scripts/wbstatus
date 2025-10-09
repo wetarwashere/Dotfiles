@@ -1,7 +1,0 @@
-#!/bin/sh
-
-if pgrep -x waybar >/dev/null; then
-    pkill waybar && hyprctl dispatch exec waybar && makoctl reload
-else
-    hyprctl dispatch exec waybar
-fi
