@@ -120,7 +120,7 @@
         "on-scroll-down": "",
         "method": "pipewire",
         "input_delay": 0,
-        "lower_cutoff_freq": 5,
+        "lower_cutoff_freq": 80,
         "higher_cutoff_freq": 10000,
     },
     "clock": {
