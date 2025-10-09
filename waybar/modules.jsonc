@@ -15,7 +15,7 @@
     "group/hideessentials": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 1200,
+            "transition-duration": 1350,
             "click-to-reveal": false,
             "transition-left-to-right": false,
         },
