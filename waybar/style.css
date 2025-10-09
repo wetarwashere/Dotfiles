@@ -62,9 +62,9 @@ button:hover {
 }
 
 #mpd {
-  border: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
   color: #ffffff;
-  margin-left: 5px;
   padding: 0px 10px 0px 10px;
   background-color: #000000;
   color: #ffffff;
@@ -96,12 +96,12 @@ button:hover {
 
 #tray > .active:hover {
   transition: all 0.2s ease-out;
-  opacity: 0.84;
+  opacity: 0.82;
 }
 
 #tray > .passive:hover {
   transition: all 0.2s ease-out;
-  opacity: 0.84;
+  opacity: 0.82;
 }
 
 #tray menu {

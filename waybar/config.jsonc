@@ -5,15 +5,13 @@
     "margin": "12, 18, 0, 18",
     "modules-left": [
         "custom/arch",
-        "cava",
-        "mpd"
+        "group/hidempd",
     ],
     "modules-right": [
         "network",
         "wireplumber",
         "battery",
-        "clock",
-        "tray",
+        "group/hidetray",
         "hyprland/workspaces",
         "group/power",
     ],

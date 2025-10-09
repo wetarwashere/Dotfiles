@@ -12,16 +12,28 @@
             "custom/off",
         ],
     },
-    "group/tray": {
+    "group/hidetray": {
         "orientation": "horizontal",
         "drawer": {
             "transition-duration": 800,
-            "click-to-reveal": true,
+            "click-to-reveal": false,
             "transition-left-to-right": true,
         },
         "modules": [
             "clock",
             "tray",
+        ],
+    },
+    "group/hidempd": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 800,
+            "click-to-reveal": false,
+            "transition-left-to-right": false,
+        },
+        "modules": [
+            "cava",
+            "mpd",
         ],
     },
     "tray": {
