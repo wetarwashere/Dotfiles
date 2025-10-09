@@ -111,7 +111,7 @@
         },
     },
     "cava": {
-        "bars": 9,
+        "bars": 8,
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
         "waves": true,
         "monstercat": true,
