@@ -43,7 +43,7 @@ width=210
 default-timeout=900
 
 [category=wallpaper]
-width=354
+width=364
 default-timeout=1200
 
 [category=waybar]
