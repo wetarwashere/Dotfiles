@@ -2,8 +2,8 @@
     "group/power": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 1240,
-            "click-to-reveal": false,
+            "transition-duration": 950,
+            "click-to-reveal": true,
             "transition-left-to-right": true,
         },
         "modules": [
@@ -123,7 +123,7 @@
         "higher_cutoff_freq": 10000,
     },
     "clock": {
-        "format": "󰥔 {:%I:%M %p}",
+        "format": "󰥔 {:%b %d %a %Y at %I:%M %p}",
         "interval": 60,
         "timezone": "Asia/Jakarta",
         "tooltip": false,

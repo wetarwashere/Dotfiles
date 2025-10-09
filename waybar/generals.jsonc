@@ -1,6 +1,7 @@
 {
     "layer": "bottom",
     "position": "top",
+    "bar_delimiter": "|",
     "height": 35,
     "margin": "12, 18, 0, 18",
     "modules-left": [
