@@ -84,14 +84,14 @@
         },
     },
     "cava": {
-        "bars": 14,
+        "bars": 8,
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
         "waves": true,
         "monstercat": true,
-        "bar_delimiter": 0,
+        "bar_delimiter": 32,
         "method": "pipewire",
         "input_delay": 0,
-        "lower_cutoff_freq": 10,
+        "lower_cutoff_freq": 5,
         "higher_cutoff_freq": 10000,
     },
     "clock": {

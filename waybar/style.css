@@ -7,6 +7,7 @@
 }
 
 tooltip {
+  color: #ffffff;
   border: 2px solid #ffffff;
 }
 
@@ -96,6 +97,8 @@ button:hover {
 #tray menu {
   border: 2px solid #ffffff;
   background-color: #000000;
+  color: #ffffff;
+  padding: 8px;
 }
 
 #clock {
