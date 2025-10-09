@@ -122,7 +122,7 @@ button:hover {
   border-bottom: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
   color: #ffffff;
-  padding: 0px 8px 0px 8px;
+  padding: 0px 6px 0px 8px;
   background-color: #000000;
 }
 
@@ -138,7 +138,7 @@ button:hover {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
-  padding: 0px 4px 0px 4px;
+  padding: 0px 4px 0px 6px;
   background-color: #000000;
 }
 
