@@ -2,6 +2,7 @@
     "name": "webar",
     "layer": "bottom",
     "position": "top",
+    "reload_style_on_change": true,
     "bar_delimiter": "|",
     "height": 35,
     "margin": "12, 18, 0, 18",
