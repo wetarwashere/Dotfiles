@@ -2,12 +2,13 @@
     "group/power": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 950,
-            "click-to-reveal": true,
+            "transition-duration": 1320,
+            "click-to-reveal": false,
             "transition-left-to-right": true,
         },
         "modules": [
             "custom/power",
+            "custom/exit",
             "custom/reboot",
             "custom/off",
         ],
@@ -60,6 +61,11 @@
         "format": "",
         "tooltip": false,
         "on-click": "poweroff",
+    },
+    "custom/exit": {
+        "format": "󰈆",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit",
     },
     "custom/reboot": {
         "format": "",
