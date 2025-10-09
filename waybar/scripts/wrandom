@@ -7,4 +7,4 @@ wallpaper_file=$(basename $random_wallpaper)
 
 cp $random_wallpaper $temp_wallpaper
 swww img "$random_wallpaper" --transition-fps 60 --transition-type outer --transition-pos center --transition-duration 1
-makoctl dismiss -a && notify-send -c wallpaper -i $HOME/.local/share/icons/Picture.png "Wallpaper" "$wallpaper_file wallpaper applied"
+makoctl dismiss -a && notify-send -c wallpaper "Wallpaper Randomizer" "$wallpaper_file wallpaper applied"
