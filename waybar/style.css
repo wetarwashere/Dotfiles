@@ -21,6 +21,7 @@ button:hover {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
+  color: #ffffff;
   font-size: 22px;
   color: #ffffff;
   transition: all 0.3s ease-out;
@@ -32,6 +33,7 @@ button:hover {
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
+  color: #ffffff;
   font-size: 28px;
   background-color: #000000;
   padding: 0px 12px 0px 6px;
@@ -41,6 +43,7 @@ button:hover {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
+  color: #ffffff;
   background-color: #000000;
   font-size: 17px;
   margin-left: 5px;
@@ -51,19 +54,15 @@ button:hover {
   border-right: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
+  color: #ffffff;
   font-size: 17px;
   background-color: #000000;
   padding: 0px 15px 0px 14px;
 }
 
-#custom-lyrics {
-  border: 2px solid #ffffff;
-  background-color: #000000;
-  padding: 0px 10px 0px 10px;
-}
-
 #mpd {
   border: 2px solid #ffffff;
+  color: #ffffff;
   margin-left: 5px;
   padding: 0px 10px 0px 10px;
   background-color: #000000;
@@ -73,6 +72,7 @@ button:hover {
 #battery {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
+  color: #ffffff;
   padding: 0px 11px 0px 11px;
   background-color: #000000;
 }
@@ -80,6 +80,7 @@ button:hover {
 #wireplumber {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
+  color: #ffffff;
   padding: 0px 9px 0px 9px;
   background-color: #000000;
 }
@@ -87,6 +88,7 @@ button:hover {
 #tray {
   border: 2px solid #ffffff;
   padding: 0px 12px 0px 12px;
+  color: #ffffff;
   margin-right: 5px;
   background-color: #000000;
 }
@@ -100,6 +102,7 @@ button:hover {
   border-bottom: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
+  color: #ffffff;
   margin-right: 5px;
   padding: 0px 12px 0px 8px;
   background-color: #000000;
@@ -109,6 +112,7 @@ button:hover {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
+  color: #ffffff;
   padding: 0px 8px 0px 8px;
   background-color: #000000;
 }
@@ -117,6 +121,7 @@ button:hover {
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
+  color: #ffffff;
   background-color: #000000;
   padding: 0px 8px 0px 11px;
 }
