@@ -1,0 +1,16 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 35,
+    "margin": "12, 18, 0, 18",
+    "modules-left": [
+        "custom/arch",
+        "group/hidempd",
+    ],
+    "modules-right": [
+        "wireplumber",
+        "group/hideessentials",
+        "hyprland/workspaces",
+        "group/power",
+    ],
+},

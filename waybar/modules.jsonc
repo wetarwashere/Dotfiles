@@ -2,7 +2,7 @@
     "group/power": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 800,
+            "transition-duration": 900,
             "click-to-reveal": true,
             "transition-left-to-right": true,
         },
@@ -12,22 +12,24 @@
             "custom/off",
         ],
     },
-    "group/hidetray": {
+    "group/hideessentials": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 800,
+            "transition-duration": 1200,
             "click-to-reveal": false,
-            "transition-left-to-right": true,
+            "transition-left-to-right": false,
         },
         "modules": [
             "clock",
+            "battery",
+            "network",
             "tray",
         ],
     },
     "group/hidempd": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 800,
+            "transition-duration": 1300,
             "click-to-reveal": false,
             "transition-left-to-right": false,
         },
@@ -39,6 +41,7 @@
     "tray": {
         "icon-size": 23,
         "spacing": 10,
+        "tooltip-format": "",
     },
     "custom/arch": {
         "format": "",
@@ -70,8 +73,8 @@
         "on-scroll-down": "pactl set-sink-volume alsa_output.pci-0000_03_00.6.analog-stereo -2% && $HOME/.config/waybar/scripts/devvolume"
     },
     "mpd": {
-        "format": "{stateIcon} {title}",
-        "format-paused": "{stateIcon} {title}",
+        "format": "{stateIcon} {title} - {artist}",
+        "format-paused": "{stateIcon} {title} - {artist}",
         "state-icons": {
             "paused": "",
             "playing": " ",
@@ -113,6 +116,8 @@
         "waves": true,
         "monstercat": true,
         "bar_delimiter": 32,
+        "on-scroll-up": "",
+        "on-scroll-down": "",
         "method": "pipewire",
         "input_delay": 0,
         "lower_cutoff_freq": 5,
@@ -138,4 +143,4 @@
         "format-disconnected": "󰤮 Unknown",
         "tooltip": false,
     },
-}
+},
