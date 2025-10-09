@@ -135,6 +135,7 @@
     },
     "clock": {
         "format": "󰥔 {:%I:%M %p}",
+        "format-alt": "󰥔 {:%b %d %a %Y}",
         "interval": 60,
         "timezone": "Asia/Jakarta",
         "tooltip": false,
