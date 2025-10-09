@@ -225,7 +225,8 @@ window#waybar {
 #clock:hover,
 #custom-arch:hover,
 #wireplumber:hover,
-#custom-exit:hover {
+#custom-exit:hover,
+#backlight:hover {
   color: #c0c0c0;
   transition: all 0.3s ease-out;
 }
