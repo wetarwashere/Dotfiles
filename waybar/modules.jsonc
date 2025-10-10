@@ -8,6 +8,7 @@
         },
         "modules": [
             "custom/power",
+            "custom/lock",
             "custom/exit",
             "custom/reboot",
             "custom/off",
@@ -82,6 +83,11 @@
         "format": "",
         "tooltip": false,
         "on-click": "reboot",
+    },
+    "custom/lock": {
+        "format": "󰌾",
+        "tooltip": false,
+        "on-click": "hyprlock -q",
     },
     "wireplumber": {
         "format": "{icon} {volume}%",
