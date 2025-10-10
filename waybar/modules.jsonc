@@ -132,10 +132,9 @@
     },
     "cava": {
         "bars": 8,
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "format-icons": [ "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
         "waves": true,
         "monstercat": true,
-        "cava_config": "$HOME/.config/cava",
         "bar_delimiter": 32,
         "on-scroll-up": "",
         "on-scroll-down": "",
