@@ -1,0 +1,5 @@
+#!/bin/sh
+
+volume=$(mpc volume | grep -o '[0-9]\+')
+
+makoctl dismiss -a && notify-send -c music-volume "Music Volume" "Current: $volume%"

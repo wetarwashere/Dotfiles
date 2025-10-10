@@ -1,0 +1,6 @@
+{
+   "include": [
+        "$HOME/.config/waybar/generals.jsonc",
+        "$HOME/.config/waybar/modules.jsonc",
+    ],
+}
