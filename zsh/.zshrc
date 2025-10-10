@@ -153,3 +153,6 @@ alias paup="paru -Syu"
 alias pare="paru -Rnsc"
 alias pain="paru -S"
 alias pase="paru -Ss"
+
+# Keymaps for deleting an entire word
+bindkey "^H" backward-kill-word
