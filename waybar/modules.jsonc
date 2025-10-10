@@ -34,7 +34,7 @@
     "group/hidempd": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 1000,
+            "transition-duration": 1200,
             "click-to-reveal": false,
             "transition-left-to-right": false,
         },
