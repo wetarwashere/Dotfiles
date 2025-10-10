@@ -12,6 +12,7 @@
     ],
     "modules-right": [
         "wireplumber",
+        "backlight",
         "group/hideessentials",
         "tray",
         "hyprland/workspaces",

@@ -29,7 +29,6 @@
             "clock",
             "battery",
             "network",
-            "backlight",
         ],
     },
     "group/hidempd": {
