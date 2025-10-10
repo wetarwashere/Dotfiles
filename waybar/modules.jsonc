@@ -3,13 +3,12 @@
         "orientation": "horizontal",
         "drawer": {
             "transition-duration": 1550,
-            "click-to-reveal": false,
+            "click-to-reveal": true,
             "transition-left-to-right": true,
         },
         "modules": [
             "custom/power",
             "custom/lock",
-            "custom/exit",
             "custom/reboot",
             "custom/off",
         ],
@@ -73,11 +72,6 @@
         "format": "",
         "tooltip": false,
         "on-click": "poweroff",
-    },
-    "custom/exit": {
-        "format": "󰈆",
-        "tooltip": false,
-        "on-click": "hyprctl dispatch exit",
     },
     "custom/reboot": {
         "format": "",

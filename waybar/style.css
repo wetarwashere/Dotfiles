@@ -40,15 +40,6 @@ button:hover {
   padding: 0px 13px 0px 8px;
 }
 
-#custom-exit {
-  border-bottom: 2px solid #ffffff;
-  border-top: 2px solid #ffffff;
-  color: #ffffff;
-  background-color: #000000;
-  font-size: 17px;
-  padding: 0px 15px 0px 15px;
-}
-
 #custom-lock {
   border-bottom: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
@@ -218,7 +209,6 @@ window#waybar {
 #clock:hover,
 #custom-arch:hover,
 #wireplumber:hover,
-#custom-exit:hover,
 #backlight:hover,
 #custom-lock:hover {
   color: #c0c0c0;
