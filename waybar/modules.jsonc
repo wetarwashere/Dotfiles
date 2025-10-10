@@ -13,11 +13,6 @@
             "custom/off",
         ],
     },
-    "custom/separator": {
-        "format": "|",
-        "interval": "once",
-        "tooltip": false
-    },
     "group/hideessentials": {
         "orientation": "horizontal",
         "drawer": {

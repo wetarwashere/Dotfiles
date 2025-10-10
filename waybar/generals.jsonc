@@ -7,7 +7,6 @@
     "margin": "12, 10, 0, 10",
     "modules-left": [
         "custom/arch",
-        "custom/separator",
         "group/hidempd",
     ],
     "modules-right": [
@@ -16,7 +15,6 @@
         "group/hideessentials",
         "tray",
         "hyprland/workspaces",
-        "custom/separator",
         "group/power",
     ],
 },
