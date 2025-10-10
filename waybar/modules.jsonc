@@ -3,7 +3,7 @@
         "orientation": "horizontal",
         "drawer": {
             "transition-duration": 1350,
-            "click-to-reveal": false,
+            "click-to-reveal": true,
             "transition-left-to-right": true,
         },
         "modules": [
