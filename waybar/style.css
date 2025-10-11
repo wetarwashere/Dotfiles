@@ -22,22 +22,21 @@ button:hover {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
-  color: #ffffff;
+  color: #000000;
   font-size: 22px;
-  color: #ffffff;
   transition: all 0.3s ease-out;
-  padding: 0px 5px 0px 13px;
-  background-color: #000000;
+  padding: 0px 13px 0px 13px;
+  background-color: #ffffff;
 }
 
 #custom-power {
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
-  color: #ffffff;
+  color: #000000;
   font-size: 28px;
-  background-color: #000000;
-  padding: 0px 13px 0px 8px;
+  background-color: #ffffff;
+  padding: 0px 13px 0px 13px;
 }
 
 #custom-lock {
@@ -74,9 +73,8 @@ button:hover {
   border-bottom: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
   color: #ffffff;
-  padding: 0px 2px 0px 10px;
+  padding: 0px 10px 0px 10px;
   background-color: #000000;
-  color: #ffffff;
 }
 
 #battery {
@@ -132,12 +130,10 @@ button:hover {
 }
 
 #cava {
-  border-top: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  color: #ffffff;
-  padding: 0px 8px 0px 13px;
-  background-color: #000000;
+  border: 2px solid #ffffff;
+  color: #000000;
+  padding: 0px 2px 0px 8px;
+  background-color: #ffffff;
 }
 
 #network {
@@ -204,13 +200,17 @@ window#waybar {
 
 #custom-reboot:hover,
 #custom-off:hover,
-#custom-power:hover,
 #mpd:hover,
 #clock:hover,
-#custom-arch:hover,
 #wireplumber:hover,
 #backlight:hover,
 #custom-lock:hover {
   color: #c0c0c0;
+  transition: all 0.3s ease-out;
+}
+
+#custom-arch:hover,
+#custom-power:hover {
+  color: #858585;
   transition: all 0.3s ease-out;
 }
