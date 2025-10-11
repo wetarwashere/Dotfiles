@@ -213,6 +213,6 @@ window#waybar {
 
 #custom-arch:hover,
 #custom-power:hover {
-  color: #909090;
+  color: #888888;
   transition: all 0.3s ease-out;
 }
