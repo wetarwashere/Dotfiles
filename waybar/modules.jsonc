@@ -81,7 +81,7 @@
     "custom/lock": {
         "format": "󰌾",
         "tooltip": false,
-        "on-click": "hyprlock -q",
+        "on-click": "pidof hyprlock || hyprlock -q",
     },
     "wireplumber": {
         "format": "{icon} {volume}%",
@@ -147,7 +147,7 @@
     },
     "clock": {
         "format": "󰥔 {:%I:%M %p}",
-        "format-alt": "󰥔 {:%b %d %a %Y}",
+        "format-alt": " {:%D}",
         "interval": 60,
         "timezone": "Asia/Jakarta",
         "tooltip": false,
