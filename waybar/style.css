@@ -130,10 +130,12 @@ button:hover {
 }
 
 #cava {
-  border: 2px solid #ffffff;
-  color: #000000;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  color: #ffffff;
   padding: 0px 2px 0px 8px;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 #network {
