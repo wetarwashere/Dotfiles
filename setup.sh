@@ -18,6 +18,7 @@ echo " "
 sleep 1
 
 systemctl enable --user mpd.service
+systemctl --user enable --now hypridle.service
 sudo systemctl enable cups.service
 sudo systemctl enable ufw.service
 sudo ufw allow 53317/tcp
