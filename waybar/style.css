@@ -44,7 +44,7 @@ button:hover {
   border-left: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
   color: #ffffff;
-  margin-left: 3px;
+  margin-left: 4px;
   background-color: #000000;
   font-size: 17px;
   padding: 0px 15px 0px 15px;
@@ -97,7 +97,7 @@ button:hover {
 #tray {
   border: 2px solid #ffffff;
   padding: 0px 12px 0px 12px;
-  margin-right: 3px;
+  margin-right: 4px;
   color: #ffffff;
   background-color: #000000;
 }
@@ -124,7 +124,7 @@ button:hover {
   border-right: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
   color: #ffffff;
-  margin-right: 3px;
+  margin-right: 4px;
   padding: 0px 13px 0px 8px;
   background-color: #000000;
 }
