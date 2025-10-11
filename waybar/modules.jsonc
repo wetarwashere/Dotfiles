@@ -103,7 +103,7 @@
         "on-click-middle": "mpc toggle && $HOME/.config/waybar/scripts/songinfo",
         "on-scroll-up": "mpc volume +2 && $HOME/.config/waybar/scripts/songvolume",
         "on-scroll-down": "mpc volume -2 && $HOME/.config/waybar/scripts/songvolume",
-        "on-click-right": "mpc next && $HOME/.config/waybar/scripts/songinfo",
+        "on-click-right": "mpc prev && $HOME/.config/waybar/scripts/songinfo",
         "on-click": "mpc next && $HOME/.config/waybar/scripts/songinfo",
         "tooltip": false,
     },
