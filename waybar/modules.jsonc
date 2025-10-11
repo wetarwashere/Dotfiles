@@ -71,7 +71,7 @@
     "custom/off": {
         "format": "",
         "tooltip": false,
-        "on-click": "poweroff",
+        "on-click": "shutdown now",
     },
     "custom/reboot": {
         "format": "",
