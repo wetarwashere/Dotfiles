@@ -163,8 +163,6 @@ button:hover {
 }
 
 #workspaces button {
-  min-width: 15px;
-  min-height: 22px;
   transition: none;
   color: #858585;
   border: none;
