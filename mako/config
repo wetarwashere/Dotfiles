@@ -43,7 +43,7 @@ width=210
 default-timeout=900
 
 [category=idle]
-width=364
+width=354
 default-timeout=1100
 
 [category=wallpaper]
