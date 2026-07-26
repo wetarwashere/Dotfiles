@@ -120,7 +120,8 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --marker="◆ " --pointer="" --separator="─" --scrollbar="│"
     --info="right"  --preview "bat --style=numbers --color=always {} | head -500"'
 
-# Enable zoxide
+# Enable programs feature
+export GPG_TTY="$(tty)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Some aliases
