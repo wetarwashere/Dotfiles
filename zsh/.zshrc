@@ -75,7 +75,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-auto-venv/auto-venv.zsh
 autoload -U compinit && compinit
 
 # History configurations
@@ -125,12 +124,8 @@ export GPG_TTY="$(tty)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Some aliases
-alias delcache="sudo paccache -rk0 && paru -Scc --noconfirm && paru -Sccd --noconfirm && rm -rf $HOME/.local/share/zoxide && npm cache clean --force && rm -rf $HOME/{.pki,.npm,.npmrc,.yarn,.yarnrc,.bun} && rm -rf $HOME/.cache/{paru,swifty,swww} && echo 'Cache successfully cleaned'"
+alias delcache="sudo paccache -rk0 && rm -rf $HOME/.local/share/zoxide && npm cache clean --force && rm -rf $HOME/{.pki,.npm,.npmrc,.yarn,.yarnrc,.bun} && rm -rf $HOME/.cache/awww && echo 'Cache successfully cleaned'"
 alias delhist="rm -rf $HOME/.config/zsh/zsh_history && echo 'All histories successfully cleaned'"
-alias paup="paru -Syu"
-alias pare="paru -Rnsc"
-alias pain="paru -S"
-alias pase="paru -Ss"
 
 # Keymaps for deleting an entire word
 bindkey "^H" backward-kill-word
