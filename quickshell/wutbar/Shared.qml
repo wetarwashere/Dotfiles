@@ -15,7 +15,7 @@ QtObject {
     property string username: ""
     property string distro: ""
     property string windowManager: ""
-    property real brightness: 0
+    property real brightness: 1
     property real musicVolume: 0
     property bool isPlaying: false
     property var levels: []

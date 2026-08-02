@@ -262,7 +262,7 @@ PanelWindow {
                     Row {
                         Text {
                             id: brightnessIcon
-                            text: Shared.brightness === 0 ? "[    " : "[ 󰃠   "
+                            text: Shared.brightness === 1 ? "[    " : "[ 󰃠   "
                             color: "#ffffff"
                             font.family: "JetBrainsMono Nerd Font"
                             font.pixelSize: 18
@@ -293,7 +293,7 @@ PanelWindow {
                                 }
 
                                 function updateBrightness(x) {
-                                    var newValue = Math.max(0, Math.min(100, Math.round((x / width) * 100)));
+                                    var newValue = Math.max(1, Math.min(100, Math.round((x / width) * 100)));
 
                                     Shared.brightness = newValue;
                                     Shared.requestBrightnessDebounce();
