@@ -12,9 +12,7 @@ input {
         numlock
     }
 
-    touchpad {
-      off
-    }
+    touchpad {}
 
     mouse {}
 

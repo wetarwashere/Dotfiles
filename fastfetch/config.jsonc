@@ -1,107 +1,119 @@
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-        "source": "$HOME/.config/fastfetch/crayon.png",
-        "type": "kitty",
-        "height": 17,
-        "width": 40,
-        "padding": {
-            "top": 1,
-            "left": 2,
-            "right": 4,
-            "bottom": 0
-        }
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "$HOME/.config/fastfetch/crayon.png",
+    "type": "kitty",
+    "height": 18,
+    "width": 40,
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4,
+      "bottom": 0
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[97m───────────────────System───────────────────"
     },
-    "modules": [
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[97m───────────────────System───────────────────"
-        },
-        "break",
-        {
-            "type": "host",
-            "key": "   PC",
-            "format": "{name}",
-            "keyColor": "white"
-        },
-        {
-            "type": "display",
-            "key": "  󰍹 Monitor",
-            "format": "{1}x{2} ({3}hz)",
-            "keyColor": "white"
-        },
-        {
-            "type": "cpu",
-            "key": "   CPU",
-            "format": "{name}",
-            "keyColor": "white"
-        },
-        {
-            "type": "gpu",
-            "key": "   GPU",
-            "format": "{name}",
-            "keyColor": "white"
-        },
-        {
-            "type": "memory",
-            "key": "   Memory",
-            "format": "{1} / {2}",
-            "keyColor": "white"
-        },
-        {
-            "type": "disk",
-            "key": "   Disk",
-            "format": "{1} / {2}",
-            "keyColor": "white"
-        },
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[97m────────────────────User────────────────────"
-        },
-        "break",
-        {
-            "type": "os",
-            "key": "   Distro",
-            "format": "{name}",
-            "keyColor": "white"
-        },
-        {
-            "type": "users",
-            "key": "   User",
-            "format": "{1}",
-            "keyColor": "white"
-        },
-        {
-            "type": "wm",
-            "key": "   Compositor",
-            "format": "{1}",
-            "keyColor": "white"
-        },
-        {
-            "type": "wm",
-            "key": "   DS",
-            "format": "{3}",
-            "keyColor": "white"
-        },
-        {
-            "type": "terminal",
-            "key": "   Terminal",
-            "format": "{1}",
-            "keyColor": "white"
-        },
-        {
-            "type": "shell",
-            "key": "   Shell",
-            "format": "{1}",
-            "keyColor": "white",
-        },
-        "break",
-        {
-            "type": "colors",
-            "symbol": "square",
-            "paddingLeft": 13
-        }
-    ]
+    "break",
+    {
+      "type": "host",
+      "key": "   PC",
+      "format": "{family}",
+      "keyColor": "white"
+    },
+    {
+      "type": "display",
+      "key": "  󰍹 Monitor",
+      "format": "{1}x{2} ({3}hz)",
+      "keyColor": "white"
+    },
+    {
+      "type": "cpu",
+      "key": "   CPU",
+      "format": "{name}",
+      "keyColor": "white"
+    },
+    {
+      "type": "gpu",
+      "key": "   GPU",
+      "format": "{name}",
+      "keyColor": "white"
+    },
+    {
+      "type": "memory",
+      "key": "   Memory",
+      "format": "{1} / {2}",
+      "keyColor": "white"
+    },
+    {
+      "type": "disk",
+      "key": "   Disk",
+      "format": "{1} / {2}",
+      "keyColor": "white"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[97m────────────────────User────────────────────"
+    },
+    "break",
+    {
+      "type": "os",
+      "key": "   Distro",
+      "format": "{name}",
+      "keyColor": "white"
+    },
+    {
+      "type": "kernel",
+      "key": "  󰞸 Kernel",
+      "format": "{release}",
+      "keyColor": "white"
+    },
+    {
+      "type": "users",
+      "key": "   User",
+      "format": "{1}",
+      "keyColor": "white"
+    },
+    {
+      "type": "media",
+      "key": "   Music",
+      "format": "{title} - {artist}",
+      "keyColor": "white"
+    },
+    {
+      "type": "wm",
+      "key": "   WM",
+      "format": "{pretty-name}",
+      "keyColor": "white"
+    },
+    {
+      "type": "wm",
+      "key": "   Protocol",
+      "format": "{protocol-name}",
+      "keyColor": "white"
+    },
+    {
+      "type": "terminal",
+      "key": "   Terminal",
+      "format": "{pretty-name}",
+      "keyColor": "white"
+    },
+    {
+      "type": "shell",
+      "key": "   Shell",
+      "format": "{1}",
+      "keyColor": "white"
+    },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "square",
+      "paddingLeft": 13
+    }
+  ]
 }
