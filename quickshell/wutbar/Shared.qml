@@ -6,6 +6,7 @@ QtObject {
     signal requestBrightnessDebounce
     signal requestMusicVolumeDebounce
 
+    property int loopIndex: 0
     property string titleText: "Nothing"
     property string titleIcon: " "
     property string artistText: "Nothing"
@@ -15,9 +16,11 @@ QtObject {
     property string username: ""
     property string distro: ""
     property string windowManager: ""
+    property string musicLoop: ""
     property real brightness: 1
     property real musicVolume: 0
     property bool isPlaying: false
     property var levels: []
     property var allApps: []
+    property var loopStates: ["None", "Playlist", "Track"]
 }

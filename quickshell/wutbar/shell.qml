@@ -15,11 +15,11 @@ Scope {
         target: Shared
 
         function onRequestBrightnessDebounce() {
-            brightnessDebounce.restart();
+            brightnessSetterDebounce.restart();
         }
 
         function onRequestMusicVolumeDebounce() {
-            musicVolumeDebounce.restart();
+            musicVolumeSetterDebounce.restart();
         }
     }
 
@@ -44,11 +44,19 @@ Scope {
 
     Process {
         id: musicVolumeProc
-        command: ["sh", "-c", "playerctl -p spotify volume"]
+        command: ["sh", "-c", "playerctl -p spotify volume --follow 2>/dev/null"]
         running: true
-        stdout: StdioCollector {
-            onStreamFinished: {
-                Shared.musicVolume = this.text;
+        onExited: {
+            Shared.musicVolume = 0;
+            playerVolumeDebounce.start();
+        }
+        stdout: SplitParser {
+            onRead: data => {
+                const value = parseFloat(data.trim());
+
+                if (!isNaN(value)) {
+                    Shared.musicVolume = value;
+                }
             }
         }
     }
@@ -99,7 +107,7 @@ Scope {
         id: playerProc
         property string result: ""
 
-        command: ["bash", "-c", "playerctl -p spotify metadata --format '{{ title }}|{{ artist }}|{{ mpris:artUrl }}' --follow"]
+        command: ["bash", "-c", "playerctl -p spotify metadata --format '{{ title }}|{{ artist }}|{{ mpris:artUrl }}' --follow 2>/dev/null"]
         running: true
         stdout: SplitParser {
             onRead: data => {
@@ -115,11 +123,40 @@ Scope {
     }
 
     Process {
+        id: playerLoopProc
+        command: ["bash", "-c", "playerctl -p spotify loop --follow 2>/dev/null"]
+        running: true
+        onExited: {
+            Shared.loopIndex = 0;
+            playerLoopDebounce.start();
+        }
+        stdout: SplitParser {
+            onRead: data => {
+                const status = data.trim();
+                const index = Shared.loopStates.indexOf(status);
+
+                if (index !== -1) {
+                    Shared.loopIndex = index;
+                }
+            }
+        }
+    }
+
+    Process {
         id: playerStatusProc
         property string result: ""
 
         command: ["bash", "-c", "playerctl -p spotify status --follow 2>/dev/null"]
         running: true
+        onExited: {
+            Shared.titleText = "Nothing";
+            Shared.titleIcon = " ";
+            Shared.artistText = "Nothing";
+            Shared.artistIcon = " ";
+            Shared.artUrl = "";
+            Shared.isPlaying = false;
+            playerStatusDebounce.start();
+        }
         stdout: SplitParser {
             onRead: data => {
                 const status = data.trim();
@@ -178,16 +215,34 @@ Scope {
     }
 
     Timer {
-        id: brightnessDebounce
+        id: brightnessSetterDebounce
         interval: 50
         repeat: false
         onTriggered: brigthnessSetter.running = true
     }
 
     Timer {
-        id: musicVolumeDebounce
+        id: musicVolumeSetterDebounce
         interval: 50
         repeat: false
         onTriggered: musicVolumeSetter.running = true
+    }
+
+    Timer {
+        id: playerLoopDebounce
+        interval: 1000
+        onTriggered: playerLoopProc.running = true
+    }
+
+    Timer {
+        id: playerVolumeDebounce
+        interval: 1000
+        onTriggered: musicVolumeProc.running = true
+    }
+
+    Timer {
+        id: playerStatusDebounce
+        interval: 1000
+        onTriggered: playerStatusProc.running = true
     }
 }

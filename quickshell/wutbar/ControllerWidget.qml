@@ -110,9 +110,7 @@ PanelWindow {
 
                     Rectangle {
                         id: loopButton
-                        property int loopIndex: 0
-                        property var loopStates: ["None", "Playlist", "Track"]
-                        property string loopStatus: loopStates[loopIndex]
+                        property string loopStatus: Shared.loopStates[Shared.loopIndex]
 
                         color: loopButtonHoverHandler.hovered ? "#656565" : "#ffffff"
                         width: 40
@@ -160,7 +158,7 @@ PanelWindow {
 
                         TapHandler {
                             onTapped: {
-                                loopButton.loopIndex = (loopButton.loopIndex + 1) % loopButton.loopStates.length;
+                                Shared.loopIndex = (Shared.loopIndex + 1) % Shared.loopStates.length;
 
                                 Quickshell.execDetached(["playerctl", "-p", "spotify", "loop", loopButton.loopStatus]);
                             }

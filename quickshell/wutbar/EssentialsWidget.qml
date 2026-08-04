@@ -1,6 +1,7 @@
 import QtQuick
 import Quickshell
 import Quickshell.Networking
+import Quickshell.Services.UPower
 
 PanelWindow {
     id: essentialsWidget
@@ -93,6 +94,8 @@ PanelWindow {
                 spacing: 8
 
                 Row {
+                    id: dateWidget
+
                     Text {
                         id: dateIcon
                         text: "[ 󰃭"
@@ -104,6 +107,31 @@ PanelWindow {
                     Text {
                         id: dateLabel
                         text: " " + Qt.formatDate(clockData.date, "dd.MM.yyyy") + " ]"
+                        color: "#ffffff"
+                        font.family: "JetBrainsMono Nerd Font"
+                        font.pixelSize: 18
+                    }
+                }
+
+                Row {
+                    id: batteryWidget
+                    visible: batteryDevice?.isLaptopBattery ?? false
+
+                    property var batteryDevice: UPower.displayDevice
+                    property int batteryPercentage: Math.round((batteryDevice?.percentage ?? 0) * 100)
+                    property bool isCharging: batteryDevice?.state === UPowerDeviceState.Charging
+
+                    Text {
+                        id: batteryIcon
+                        text: batteryWidget.isCharging ? "[ 󰂄" : "[ 󰁹"
+                        color: "#ffffff"
+                        font.family: "JetBrainsMono Nerd Font"
+                        font.pixelSize: 18
+                    }
+
+                    Text {
+                        id: batteryLabel
+                        text: " " + batteryWidget.batteryPercentage + "% ]"
                         color: "#ffffff"
                         font.family: "JetBrainsMono Nerd Font"
                         font.pixelSize: 18
