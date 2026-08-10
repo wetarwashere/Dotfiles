@@ -1,7 +1,3 @@
 singleton Shared 1.0 Shared.qml
-EssentialsWidget 1.0 EssentialsWidget.qml
-ProfileWidget 1.0 ProfileWidget.qml
-PlayerWidget 1.0 PlayerWidget.qml
-VisualizerWidget 1.0 VisualizerWidget.qml
+Bar 1.0 Bar.qml
 AppLauncher 1.0 AppLauncher.qml
-ControllerWidget 1.0 ControllerWidget.qml

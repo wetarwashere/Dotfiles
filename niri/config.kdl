@@ -68,7 +68,7 @@ hotkey-overlay {
 
 screenshot-path "~/Pictures/Screenshots/screenshot-%Y-%m-%d %H-%M-%S.png"
 spawn-sh-at-startup "~/.config/niri/scripts/wallpaper.sh"
-spawn-sh-at-startup "quickshell -c ~/.config/quickshell/wutbar"
+spawn-sh-at-startup "qs -c wutbar"
 
 animations {
     workspace-switch {
@@ -154,7 +154,7 @@ window-rule {
 
 binds {
     Mod+Return hotkey-overlay-title="Open kitty" { spawn "kitty"; }
-    Mod+D hotkey-overlay-title="Run app selector" { spawn-sh "quickshell -c ~/.config/quickshell/wutbar ipc call launcher toggle"; }
+    Mod+D hotkey-overlay-title="Run app selector" { spawn-sh "qs -c wutbar ipc call launcher toggle"; }
     Mod+B hotkey-overlay-title="Open firefox" { spawn "firefox"; }
     Mod+Shift+O hotkey-overlay-title="Open discord" { spawn "discord"; }
 

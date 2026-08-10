@@ -28,7 +28,7 @@
     {
       "type": "display",
       "key": "  󰍹 Monitor",
-      "format": "{1}x{2} ({3}hz)",
+      "format": "{width}x{height} [{refresh-rate}hz]",
       "keyColor": "white"
     },
     {
@@ -46,13 +46,13 @@
     {
       "type": "memory",
       "key": "   Memory",
-      "format": "{1} / {2}",
+      "format": "{used} / {total}",
       "keyColor": "white"
     },
     {
       "type": "disk",
       "key": "   Disk",
-      "format": "{1} / {2}",
+      "format": "{size-used} / {size-total} [{filesystem} on {mountpoint}]",
       "keyColor": "white"
     },
     "break",
@@ -87,7 +87,7 @@
     },
     {
       "type": "wm",
-      "key": "   WM",
+      "key": "   Window Manager",
       "format": "{pretty-name}",
       "keyColor": "white"
     },
@@ -106,7 +106,7 @@
     {
       "type": "shell",
       "key": "   Shell",
-      "format": "{1}",
+      "format": "{pretty-name}",
       "keyColor": "white"
     },
     "break",

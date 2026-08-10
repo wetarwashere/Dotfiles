@@ -11,18 +11,19 @@ PanelWindow {
     property bool buttonHovered: false
     property string query: ""
 
-    implicitWidth: appLauncherWidgetContent.width + 12 * 2
-    implicitHeight: appLauncherWidgetContent.width + 12 * 2
-    anchors.top: true
+    implicitWidth: appLauncherWidgetContent.width + 24
+    implicitHeight: appLauncherWidgetContent.height + 24
+    anchors.left: true
     anchors.bottom: true
-    anchors.right: true
     exclusiveZone: 0
     color: "transparent"
     visible: false
+    margins.bottom: 15
     WlrLayershell.keyboardFocus: WlrKeyboardFocus.OnDemand
 
     function toggle() {
         if (!appLauncherWidget.revealed) {
+            Shared.refreshList();
             appLauncherWidget.visible = true;
             appLauncherWidget.revealed = true;
             appLauncherWidgetSearch.text = "";
@@ -37,18 +38,40 @@ PanelWindow {
         clip: true
 
         Rectangle {
-            width: appLauncherWidgetContent.width + 12 * 2
-            height: appLauncherWidgetContent.height + 12 * 2
+            width: appLauncherWidgetContent.width + 24
+            height: appLauncherWidgetContent.height + 24
             color: "#000000"
-            border.color: "#ffffff"
-            border.width: 2
-            anchors.right: parent.right
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.rightMargin: appLauncherWidget.revealed ? 0 : -width
+            anchors.left: parent.left
+            anchors.verticalCenter: parent.horizontalCenter
+            anchors.leftMargin: appLauncherWidget.revealed ? 0 : -width
 
-            Behavior on anchors.rightMargin {
+            Rectangle {
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.top: parent.top
+                height: 2
+                color: "#ffffff"
+            }
+
+            Rectangle {
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                height: 2
+                color: "#ffffff"
+            }
+
+            Rectangle {
+                anchors.top: parent.top
+                anchors.bottom: parent.bottom
+                anchors.right: parent.right
+                width: 2
+                color: "#ffffff"
+            }
+
+            Behavior on anchors.leftMargin {
                 NumberAnimation {
-                    duration: 180
+                    duration: 240
                     easing.type: Easing.OutCubic
                     onRunningChanged: {
                         if (!running && !appLauncherWidget.revealed) {
@@ -61,7 +84,7 @@ PanelWindow {
 
             Column {
                 id: appLauncherWidgetContent
-                width: 420
+                width: 500
                 anchors.centerIn: parent
                 spacing: 8
 
@@ -110,7 +133,7 @@ PanelWindow {
                     delegate: Rectangle {
                         width: appLauncherAppList.width
                         height: 40
-                        color: ListView.isCurrentItem ? "#252525" : "transparent"
+                        color: ListView.isCurrentItem ? "#303030" : "transparent"
 
                         Row {
                             anchors.verticalCenter: parent.verticalCenter

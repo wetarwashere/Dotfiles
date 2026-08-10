@@ -1,26 +1,39 @@
 pragma Singleton
 
+import Quickshell
 import QtQuick
+import Quickshell.Io
 
 QtObject {
-    signal requestBrightnessDebounce
-    signal requestMusicVolumeDebounce
-
-    property int loopIndex: 0
-    property string titleText: "Nothing"
-    property string titleIcon: " "
-    property string artistText: "Nothing"
-    property string artistIcon: " "
-    property string artUrl: ""
-    property string githubUsername: "insert.myself"
-    property string username: ""
-    property string distro: ""
-    property string windowManager: ""
-    property string musicLoop: ""
-    property real brightness: 1
-    property real musicVolume: 0
-    property bool isPlaying: false
-    property var levels: []
+    property string songText: "Not Playing"
     property var allApps: []
-    property var loopStates: ["None", "Playlist", "Track"]
+    property Process appListProc: Process {
+        command: ["bash", "-c", "for f in /usr/share/applications/*.desktop $HOME/.local/share/applications/*.desktop; do " + "[ -f \"$f\" ] || continue; " + "n=$(grep -m1 '^Name=' \"$f\" | cut -d= -f2-); " + "e=$(grep -m1 '^Exec=' \"$f\" | cut -d= -f2- | sed 's/%[a-zA-Z]//g'); " + "i=$(grep -m1 '^Icon=' \"$f\" | cut -d= -f2-); " + "[ -n \"$n\" ] && [ -n \"$e\" ] && echo \"$n|$e|$i\"; " + "done"]
+        running: false
+        stdout: SplitParser {
+            onRead: line => {
+                const parts = line.trim().split("|");
+
+                if (parts[0] && parts[1]) {
+                    const icon = parts[2] || "";
+
+                    if (icon) {
+                        Quickshell.iconPath(icon, "application-x-executable");
+                    }
+
+                    Shared.allApps = Shared.allApps.concat([
+                        {
+                            name: parts[0],
+                            exec: parts[1],
+                            icon: icon
+                        }
+                    ]);
+                }
+            }
+        }
+    }
+    function refreshList() {
+        allApps = [];
+        appListProc.running = true;
+    }
 }
