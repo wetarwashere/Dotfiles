@@ -212,11 +212,36 @@ PanelWindow {
                     Repeater {
                         model: niriConnection.workspaces
                         delegate: Rectangle {
+                            id: workspaceEntry
                             required property var model
 
                             width: 16
                             height: model.isFocused ? 40 : 30
-                            color: model.isFocused ? "#ffffff" : "#151515"
+                            color: {
+                                if (model.isFocused) {
+                                    return "#ffffff";
+                                } else if (workspaceEntryHoverHandler.hovered) {
+                                    return "#181818";
+                                } else {
+                                    return "#101010";
+                                }
+                            }
+
+                            Behavior on color {
+                                ColorAnimation {
+                                    duration: 180
+                                }
+                            }
+
+                            HoverHandler {
+                                id: workspaceEntryHoverHandler
+                                cursorShape: Qt.PointingHandCursor
+                            }
+
+                            TapHandler {
+                                id: workspaceEntryTapHandler
+                                onTapped: niriConnection.focusWorkspace(workspaceEntry.model.id)
+                            }
                         }
                     }
                 }
@@ -273,7 +298,7 @@ PanelWindow {
                 TapHandler {
                     id: powerWidgetTapHandler
                     onTapped: {
-                      Quickshell.execDetached(["bash", "-c", "qs -c wutbar ipc call launcher toggle"])
+                        Quickshell.execDetached(["bash", "-c", "qs -c wutbar ipc call launcher toggle"]);
                     }
                 }
 
