@@ -5,7 +5,7 @@
     address: "localhost:6600",
     password: None,
     enable_config_hot_reload: true,
-    theme: "custom",
+    theme: "wyt4r",
     volume_step: 2,
     max_fps: 60,
     wrap_navigation: false,

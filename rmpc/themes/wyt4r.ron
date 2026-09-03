@@ -46,20 +46,20 @@
     ],
     song_table_format: [
         (
-            prop: (kind: Property(Title), style: (fg: "#9ccfd8"),
-                highlighted_item_style: (fg: "#191724", modifiers: "Bold"),
-                default: (kind: Property(Filename), style: (fg: "#6e6a86"),)
+            prop: (kind: Property(Title), style: (fg: "#808080"),
+                highlighted_item_style: (fg: "#000000", modifiers: "Bold"),
+                default: (kind: Property(Filename), style: (fg: "#808080"),)
             ),
             width: "50%",
         ),
         (
-            prop: (kind: Property(Artist), style: (fg: "#ebbcba"),
-                default: (kind: Text("Unknown Artist"), style: (fg: "#908caa"))
+            prop: (kind: Property(Artist), style: (fg: "#808080"),
+                default: (kind: Text("Unknown Artist"), style: (fg: "#808080"))
             ),
             width: "45%",
         ),
         (
-            prop: (kind: Property(Duration), style: (fg: "#ffcc66")),
+            prop: (kind: Property(Duration), style: (fg: "#ffffff")),
             width: "10%",
             alignment: Right,
         ),
@@ -76,20 +76,20 @@
                     )
                 ],
                 right: [
-                    (kind: Text("Vol: "), style: (fg: "#ffcc66", modifiers: "Bold")),
-                    (kind: Property(Status(Volume)), style: (fg: "#ffcc66", modifiers: "Bold")),
-                    (kind: Text("% "), style: (fg: "#ffcc66", modifiers: "Bold"))
+                    (kind: Text("Vol: "), style: (fg: "#ffffff", modifiers: "Bold")),
+                    (kind: Property(Status(Volume)), style: (fg: "#ffffff", modifiers: "Bold")),
+                    (kind: Text("% "), style: (fg: "#ffffff", modifiers: "Bold"))
                 ]
             ),
             (
                 left: [
                     (kind: Text(" ")),
-                    (kind: Property(Status(Elapsed)), style: (fg: "#ffcc66")),
-                    (kind: Text("/"),style: (fg: "#ffcc66")),
-                    (kind: Property(Status(Duration)), style: (fg: "#ffcc66")),
+                    (kind: Property(Status(Elapsed)), style: (fg: "#ffffff")),
+                    (kind: Text("/"),style: (fg: "#ffffff")),
+                    (kind: Property(Status(Duration)), style: (fg: "#ffffff")),
                 ],
                 center: [
-                    (kind: Property(Song(Artist)), style: (fg: "#ebbcba", modifiers: "Bold"),
+                    (kind: Property(Song(Artist)), style: (fg: "#808080", modifiers: "Bold"),
                         default: (kind: Text("Unknown Artist"), style: (fg: "#eb6f92", modifiers: "Bold"))
                     ),
                 ],
@@ -97,9 +97,9 @@
                     (
                         kind: Property(Widget(States(
                             active_style: (fg: "#ffffff", modifiers: "Bold"),
-                            separator_style: (fg: "#908caa")))
+                            separator_style: (fg: "#808080")))
                         ),
-                        style: (fg: "#ebbcba")
+                        style: (fg: "#808080")
                     ),
                     (kind: Text(" ")),
                 ]
